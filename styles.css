@@ -1,0 +1,254 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f3ef;
+  color: #4e3b2c;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #e6d3b3;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(120, 90, 60, 0.05);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: #7c5c3e;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #b97a56;
+}
+h1 {
+  margin: 0.5rem 0 0 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+.mission {
+  font-style: italic;
+  color: #a67c52;
+  margin-bottom: 1rem;
+}
+.slider-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3e6d0;
+  padding: 2rem 0;
+}
+.slider {
+  position: relative;
+  width: 90vw;
+  max-width: 600px;
+  height: 340px;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(120, 90, 60, 0.10);
+}
+.slide {
+  display: none;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.slide.active {
+  display: block;
+}
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(230, 211, 179, 0.7);
+  border: none;
+  font-size: 2rem;
+  color: #7c5c3e;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background 0.2s;
+}
+.slider-btn:hover {
+  background: #b97a56;
+  color: #fff;
+}
+#prevBtn { left: 10px; }
+#nextBtn { right: 10px; }
+.welcome {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff8f0;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(120, 90, 60, 0.07);
+  text-align: center;
+}
+footer {
+  background: #e6d3b3;
+  text-align: center;
+  padding: 1.5rem 0 1rem 0;
+  margin-top: 2rem;
+}
+.social-icons {
+  margin-bottom: 0.5rem;
+}
+.social-icons a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(30%) sepia(20%) hue-rotate(-10deg) brightness(0.95);
+  transition: filter 0.2s;
+}
+.social-icons a:hover img {
+  filter: none;
+}
+@media (max-width: 700px) {
+  .slider {
+    max-width: 98vw;
+    height: 200px;
+  }
+  .slide {
+    height: 200px;
+  }
+  .welcome {
+    padding: 1rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+}
+
+/* Contact Form Styles */
+.contact-form-section {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff8f0;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(120, 90, 60, 0.07);
+}
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #7c5c3e;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #e6d3b3;
+  border-radius: 8px;
+  background: #f7f3ef;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  resize: vertical;
+}
+.contact-form button {
+  background: #b97a56;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.contact-form button:hover {
+  background: #7c5c3e;
+}
+
+/* About Page Portrait */
+.about-me {
+  max-width: 700px;
+  margin: 2rem auto 1.5rem auto;
+  background: #fff8f0;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(120, 90, 60, 0.07);
+  text-align: center;
+}
+.portrait {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #e6d3b3;
+}
+
+/* Blog Post Section */
+.blog-post {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #f3e6d0;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(120, 90, 60, 0.07);
+}
+.blog-post h2 {
+  margin-top: 0;
+}
+.blog-post ul {
+  list-style: none;
+  padding-left: 0;
+}
+.blog-post ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Recipe, Ingredient, Guide, Eco-tip Cards */
+.recipes, .ingredient-spotlights, .self-care, .eco-friendly {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.recipe, .ingredient, .guide, .eco-tip {
+  background: #fff8f0;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(120, 90, 60, 0.06);
+  padding: 1.2rem;
+  max-width: 260px;
+  flex: 1 1 220px;
+  text-align: center;
+}
+.recipe img, .ingredient img, .guide img, .eco-tip img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+}
+
+@media (max-width: 900px) {
+  .recipes, .ingredient-spotlights, .self-care, .eco-friendly {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .recipe, .ingredient, .guide, .eco-tip {
+    max-width: 98vw;
+  }
+} 
